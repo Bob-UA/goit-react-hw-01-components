@@ -1,0 +1,9 @@
+.profile{
+        height: 100vh;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 14;
+        color: #010101;
+        border: 1px solid #CDCDCD;
+}
