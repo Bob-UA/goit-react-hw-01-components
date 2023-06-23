@@ -4,7 +4,7 @@ import css from './Profile.module.css';
 function Profile({ username, avatar, tag, location, stats }) {
   return (
     <div className={css.profile}>
-      <div className="description">
+      <div className={css.description}>
         <img
           src={avatar}
           alt={username}
@@ -17,50 +17,16 @@ function Profile({ username, avatar, tag, location, stats }) {
         <p className="location">{location}</p>
       </div>
 
-      <ul
-        className="stats"
-        style={{
-          display: 'inline-flex',
-          listStyle: 'none',
-          backgroundColor: '#EEEEEE',
-          padding: '0',
-        }}
-      >
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'center',
-            border: '1px solid #CDCDCD',
-            padding: '10px 5px',
-          }}
-        >
+      <ul className={css.stats}>
+        <li className={css.item}>
           <span className="label">Followers</span>
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'center',
-            border: '1px solid #CDCDCD',
-            padding: '10px 5px',
-            width: '65px',
-          }}
-        >
+        <li className={css.item}>
           <span className="label">Views</span>
           <span className="quantity">{stats.views}</span>
         </li>
-        <li
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'center',
-            border: '1px solid #CDCDCD',
-            padding: '10px 5px',
-            width: '65px',
-          }}
-        >
+        <li className={css.item}>
           <span className="label">Likes</span>
           <span className="quantity">{stats.likes}</span>
         </li>

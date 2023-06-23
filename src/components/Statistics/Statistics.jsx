@@ -1,12 +1,13 @@
 import PropTypes from 'prop-types';
 import StatisticItem from './StatisticItem';
+import css from './Statistics.module.css'
 
 
 function Statistics({ title = 'Upload stats', stats }) {
   return (
-    <section className="statistics">
-      <h2 className="title">{title}</h2>
-      <ul className="stat-list">
+    <section className={css.statistics}>
+      <h2 className={css.title}>{title}</h2>
+      <ul className={css.statlist}>
         {stats.map(({ label, percentage, id })=> {
           return (
             <StatisticItem
