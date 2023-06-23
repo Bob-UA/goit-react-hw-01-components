@@ -11,6 +11,7 @@ function TransactionElement({ type, amount, currency }) {
       );
 }
 
+
 TransactionElement.propTypes = {
   type: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
