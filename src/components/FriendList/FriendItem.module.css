@@ -1,0 +1,16 @@
+.item{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.status{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: block;
+}
+
+.avatar{
+    padding: 10px;
+}
